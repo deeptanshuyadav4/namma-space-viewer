@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Namma Space</title>
+    <script type="module" crossorigin src="./assets/index-RkysIyuQ.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-PQBW9IsY.css">
+  </head>
+  <body>
+    <canvas id="view"></canvas>
+
+    <div id="loading" class="panel center">
+      <div class="brand">Namma Space</div>
+      <div id="loading-text">Loading scene…</div>
+      <div class="bar"><div id="loading-bar"></div></div>
+    </div>
+
+    <div id="start" class="panel center hidden">
+      <div class="brand" id="scene-title">Namma Space</div>
+      <p class="hint desktop-only">Click to walk around</p>
+      <p class="hint touch-only">Tap to start</p>
+      <table class="keys desktop-only">
+        <tr><td><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></td><td>walk</td></tr>
+        <tr><td>mouse</td><td>look around</td></tr>
+        <tr><td><kbd>Shift</kbd></td><td>walk faster</td></tr>
+        <tr><td><kbd>F</kbd></td><td>toggle fly mode (no collision)</td></tr>
+        <tr><td><kbd>Q</kbd> / <kbd>E</kbd></td><td>down / up (fly mode)</td></tr>
+        <tr><td><kbd>M</kbd></td><td>toggle map · click map to jump</td></tr>
+        <tr><td><kbd>Esc</kbd></td><td>release mouse</td></tr>
+      </table>
+      <p class="hint touch-only">Left thumb: move · Right thumb: look</p>
+    </div>
+
+    <div id="hud">
+      <span id="mode">walk</span>
+      <span id="fps"></span>
+    </div>
+
+    <canvas id="minimap" class="hidden" title="Click to jump there"></canvas>
+    <div id="joystick" class="hidden"><div id="stick"></div></div>
+
+  </body>
+</html>

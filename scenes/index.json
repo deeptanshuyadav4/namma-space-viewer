@@ -1,0 +1,9 @@
+{
+  "default": "hostel",
+  "scenes": [
+    {
+      "id": "hostel",
+      "title": "Hostel room"
+    }
+  ]
+}
